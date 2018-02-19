@@ -1,0 +1,24 @@
+footer {
+  background-color: $orange;
+  width: 100%;
+  font-family: 'neutra-text', sans-serif;
+  color: $white;
+}
+
+.footer-accent {
+  background-color: $burnt-orange;
+  height: 10px;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 30px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

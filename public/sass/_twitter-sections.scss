@@ -1,0 +1,27 @@
+.twitter__wrapper {
+  background-color: $orange;
+  padding: 100px 150px;
+  text-align: center;
+  font-family: 'neutra-text', sans-serif;
+  font-size: 35px;
+
+  a {
+    color: $white;
+  }
+
+  .twitter__icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px 15px 0 0;
+  }
+
+  .twitter__handle {
+    margin-top: 10px;
+  }
+}
+
+.handle__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

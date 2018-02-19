@@ -1,0 +1,46 @@
+.games-section {
+  background-color: $charcoal;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'neutra-text', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  position: relative;
+  letter-spacing: 2px;
+
+  &--left {
+    align-items: flex-start;
+  }
+
+  &--right {
+    align-items: flex-end;
+  }
+
+  &__copy-wrapper {
+    padding: 100px 50px;
+    width: 33%;
+  }
+
+  h3 {
+    font-size: 40px;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+}
+
+.games-section--dont-look-away {
+  &::after {
+    background-image: url('../img/dont-look-away.jpg');
+    background-size: cover;
+    opacity: 0.3;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
