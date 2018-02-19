@@ -29,7 +29,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          './public/css/stuido.css': './public/sass/base.scss'
+          './docs/css/stuido.css': './public/sass/base.scss'
         }
       }
     }

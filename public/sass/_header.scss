@@ -9,6 +9,7 @@ header {
   position: relative;
   margin-top: -200px;
   transition: all .5s ease-in-out;
+  border-top: 11px solid $orange;
 
   &::before {
     background-image: url('../img/vr.jpg');
@@ -29,7 +30,7 @@ header {
 
 .games-drawer {
   align-items: center;
-  background-color: $charcoal;
+  background-color: $orange;
   display: flex;
   height: 200px;
   justify-content: center;
@@ -78,12 +79,18 @@ a {
     border-bottom: 1px solid $black;
     display: flex;
     height: 40px;
-    justify-content: space-between;
     padding: 0 155px;
     text-transform: uppercase;
-    // margin-top: -40px;
     border-bottom: 1px solid #333333;
     transition: margin 1s ease-in-out;
+
+    a {
+      margin: 0 15px;
+
+      &:hover {
+        color: $orange;
+      }
+    }
 
     &--visible {
       margin-top: 0;
