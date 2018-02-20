@@ -59,7 +59,19 @@
 
 .games-section--the-take {
   &::after {
-    background-image: url('../img/the-take-bg.jpg');
+    background-image: url('../img/the-take-bg.png');
+    background-size: cover;
+    opacity: 0.3;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.games-section--net-brutality {
+  &::after {
+    background-image: url('../img/net-brutality.png');
     background-size: cover;
     opacity: 0.3;
     content: '';

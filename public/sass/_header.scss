@@ -87,6 +87,7 @@ a {
 
     a {
       margin: 0 15px;
+      transition: color .5s ease-in-out;
 
       &:hover {
         color: $orange;
@@ -104,9 +105,10 @@ a {
   letter-spacing: 1px;
   margin: 0 15px;
   text-transform: uppercase;
+  transition: text-shadow .5s ease-in-out;
 
   &:hover {
-    color: $charcoal;
+    text-shadow: -1px -1px 0 $charcoal, -2px -2px 0 $charcoal;
   }
 }
 
@@ -127,6 +129,11 @@ a {
   width: 20px;
   height: 20px;
   margin: 0 10px;
+
+  .path {
+    fill: $charcoal;
+    transition: fill .5s ease-in-out;
+  }
 
   &:hover {
     .path {
@@ -153,9 +160,11 @@ nav {
     font-family: 'featured-item';
     letter-spacing: 1px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
+
 
     &:hover {
-      color: $orange;
+      text-shadow: -1px -1px 0 $orange, -2px -2px 0 $orange, -3px -3px 0 $orange;
     }
   }
 }
