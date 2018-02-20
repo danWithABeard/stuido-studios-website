@@ -440,6 +440,12 @@ footer {
   font-family: 'neutra-text';
   margin-top: 10px; }
 
+.bio-image__twitter {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3; }
+
 .bio-social__twitter {
   display: block;
   text-align: center;
