@@ -1,9 +1,13 @@
 .twitter__wrapper {
   background-color: $orange;
-  padding: 100px 150px;
+  padding: 100px 30px;
   text-align: center;
   font-family: 'neutra-text', sans-serif;
   font-size: 35px;
+
+  @media screen and (min-width: 1000px) {
+    padding: 100px 150px;
+  }
 
   a {
     color: $white;

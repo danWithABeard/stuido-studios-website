@@ -127,8 +127,9 @@ header {
   align-items: center;
   background-color: #f46708;
   display: flex;
-  height: 200px;
+  flex-wrap: wrap;
   justify-content: center;
+  min-height: 200px;
   width: 100%;
   -webkit-box-shadow: inset 0px -7px 32px -11px rgba(0, 0, 0, 0.65);
   -moz-box-shadow: inset 0px -7px 32px -11px rgba(0, 0, 0, 0.65);
@@ -163,8 +164,8 @@ a {
     background-color: #151415;
     border-bottom: 1px solid #111111;
     display: flex;
-    height: 40px;
-    padding: 0 155px;
+    padding: 12px 155px;
+    flex-wrap: wrap;
     text-transform: uppercase;
     border-bottom: 1px solid #333333;
     transition: margin 1s ease-in-out; }
@@ -180,6 +181,8 @@ a {
   letter-spacing: 1px;
   margin: 0 15px;
   text-transform: uppercase; }
+  .website-links:hover {
+    color: #151415; }
 
 .website-links__logo {
   font-family: 'neutra-text', sans-serif;
@@ -196,21 +199,27 @@ a {
   width: 20px;
   height: 20px;
   margin: 0 10px; }
+  .header__icons:hover .path {
+    fill: #ffffff; }
 
 nav {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 90px 50px 50px;
-  width: 100%;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   nav a {
     margin: 0 50px;
     color: #ffffff;
     text-decoration: none;
     font-size: 30px;
     font-family: 'featured-item';
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    cursor: pointer; }
+    nav a:hover {
+      color: #f46708; }
 
 h1 {
   color: #ffffff;
@@ -242,7 +251,16 @@ h2 {
     align-items: flex-end; }
   .games-section__copy-wrapper {
     padding: 100px 50px;
-    width: 33%; }
+    width: 100%; }
+    @media screen and (min-width: 500px) {
+      .games-section__copy-wrapper {
+        width: 66%; } }
+    @media screen and (min-width: 1000px) {
+      .games-section__copy-wrapper {
+        width: 50%; } }
+    @media screen and (min-width: 1300px) {
+      .games-section__copy-wrapper {
+        width: 33%; } }
   .games-section h3 {
     font-size: 40px;
     margin: 10px 0; }
@@ -252,6 +270,15 @@ h2 {
 
 .games-section--dont-look-away::after {
   background-image: url("../img/dont-look-away.jpg");
+  background-size: cover;
+  opacity: 0.3;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.games-section--the-take::after {
+  background-image: url("../img/the-take-bg.jpg");
   background-size: cover;
   opacity: 0.3;
   content: '';
@@ -282,10 +309,13 @@ footer {
 
 .twitter__wrapper {
   background-color: #f46708;
-  padding: 100px 150px;
+  padding: 100px 30px;
   text-align: center;
   font-family: 'neutra-text', sans-serif;
   font-size: 35px; }
+  @media screen and (min-width: 1000px) {
+    .twitter__wrapper {
+      padding: 100px 150px; } }
   .twitter__wrapper a {
     color: #ffffff; }
   .twitter__wrapper .twitter__icon {
@@ -327,18 +357,35 @@ footer {
     font-size: 15px; }
 
 .bio-image__overlay {
-  background: #f46708;
+  align-items: center;
+  background-color: #f46708;
   display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  justify-content: center;
   opacity: 0;
   position: absolute;
+  transition: all .3s ease-in-out;
   width: 100%;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  transition: all .3s ease-in-out; }
+  z-index: 2; }
+
+.profile-pic {
+  background-color: #f46708;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); }
+  .profile-pic--jose {
+    background-image: url("../img/jose.jpg"); }
+  .profile-pic--rob {
+    background-image: url("../img/rob.png"); }
+  .profile-pic--john {
+    background-image: url("../img/john.png"); }
 
 .bio-wrapper {
   color: #ffffff;
@@ -392,5 +439,20 @@ footer {
   font-size: 22px;
   font-family: 'neutra-text';
   margin-top: 10px; }
+
+.bio-social__twitter {
+  display: block;
+  text-align: center;
+  margin-top: 20px; }
+  .bio-social__twitter svg {
+    height: 20px;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+    width: 20px; }
+  .bio-social__twitter:hover {
+    color: #f46708; }
+    .bio-social__twitter:hover svg path {
+      fill: #f46708; }
 
 /*# sourceMappingURL=stuido.css.map */

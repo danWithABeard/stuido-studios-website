@@ -19,7 +19,19 @@
 
   &__copy-wrapper {
     padding: 100px 50px;
-    width: 33%;
+    width: 100%;
+
+    @media screen and (min-width: 500px) {
+      width: 66%;
+    }
+
+    @media screen and (min-width: 1000px) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: 1300px) {
+      width: 33%;
+    }
   }
 
   h3 {
@@ -36,6 +48,18 @@
 .games-section--dont-look-away {
   &::after {
     background-image: url('../img/dont-look-away.jpg');
+    background-size: cover;
+    opacity: 0.3;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.games-section--the-take {
+  &::after {
+    background-image: url('../img/the-take-bg.jpg');
     background-size: cover;
     opacity: 0.3;
     content: '';
