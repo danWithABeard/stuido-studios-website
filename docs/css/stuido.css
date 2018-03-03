@@ -426,23 +426,6 @@ footer {
   @media screen and (min-width: 450px) {
     .bio-wrapper {
       max-width: 300px; } }
-  .bio-wrapper .bio-image__wrapper {
-    height: 300px;
-    margin-bottom: 20px;
-    position: relative;
-    width: 100%; }
-    @media screen and (min-width: 450px) {
-      .bio-wrapper .bio-image__wrapper {
-        max-width: 300px;
-        height: 300px; } }
-    .bio-wrapper .bio-image__wrapper:hover .bio-image__overlay {
-      opacity: 0.8; }
-    .bio-wrapper .bio-image__wrapper img {
-      width: 100%;
-      position: absolute;
-      z-index: 1;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%); }
   .bio-wrapper h3 {
     color: #f46708;
     font-family: 'featured-item';
@@ -457,9 +440,21 @@ footer {
     text-align: center;
     margin: 10px 0; }
   .bio-wrapper p {
-    text-align: center;
+    text-align: justify;
     font-family: 'neutra-text';
     font-size: 20px; }
+
+.bio-image__wrapper {
+  height: 300px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%; }
+  @media screen and (min-width: 450px) {
+    .bio-image__wrapper {
+      max-width: 300px;
+      height: 300px; } }
+  .bio-image__wrapper:hover .bio-image__overlay {
+    opacity: 0.8; }
 
 .bio__label {
   color: #ffffff;
@@ -481,7 +476,7 @@ footer {
 .bio-social__twitter {
   display: block;
   text-align: center;
-  margin-top: 20px;
+  margin: 10px 0 20px;
   transition: color .5s ease-in-out; }
   .bio-social__twitter svg {
     height: 20px;
@@ -499,5 +494,23 @@ footer {
 
 .game-title {
   font-style: italic; }
+
+.job-title--jose:hover {
+  font-size: 0; }
+  .job-title--jose:hover::after {
+    content: 'business guy';
+    font-size: 20px; }
+
+.job-title--rob:hover {
+  font-size: 0; }
+  .job-title--rob:hover::after {
+    content: 'design critic';
+    font-size: 20px; }
+
+.job-title--john:hover {
+  font-size: 0; }
+  .job-title--john:hover::after {
+    content: 'coffee sommelier';
+    font-size: 20px; }
 
 /*# sourceMappingURL=stuido.css.map */

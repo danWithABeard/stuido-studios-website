@@ -81,32 +81,6 @@
     max-width: 300px;
   }
 
-  .bio-image__wrapper {
-    height: 300px;
-    margin-bottom: 20px;
-    position: relative;
-    width: 100%;
-
-    @media screen and (min-width: 450px) {
-      max-width: 300px;
-      height: 300px;
-    }
-
-    &:hover {
-      .bio-image__overlay {
-        opacity: 0.8;
-      }
-    }
-
-    img {
-      width: 100%;
-      position: absolute;
-      z-index: 1;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-    }
-  }
-
   h3 {
     color: $orange;
     font-family: 'featured-item';
@@ -125,9 +99,27 @@
   }
 
   p {
-    text-align: center;
+    text-align: justify;
     font-family: 'neutra-text';
     font-size: 20px;
+  }
+}
+
+.bio-image__wrapper {
+  height: 300px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+
+  @media screen and (min-width: 450px) {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  &:hover {
+    .bio-image__overlay {
+      opacity: 0.8;
+    }
   }
 }
 
@@ -154,7 +146,7 @@
 .bio-social__twitter {
   display: block;
   text-align: center;
-  margin-top: 20px;
+  margin: 10px 0 20px;
   transition: color .5s ease-in-out;
 
   svg {
@@ -181,4 +173,37 @@
 
 .game-title {
   font-style: italic;
+}
+
+.job-title--jose {
+  &:hover {
+    font-size: 0;
+
+    &::after {
+      content: 'business guy';
+      font-size: 20px;
+    }
+  }
+}
+
+.job-title--rob {
+  &:hover {
+    font-size: 0;
+
+    &::after {
+      content: 'design critic';
+      font-size: 20px;
+    }
+  }
+}
+
+.job-title--john {
+  &:hover {
+    font-size: 0;
+
+    &::after {
+      content: 'coffee sommelier';
+      font-size: 20px;
+    }
+  }
 }
