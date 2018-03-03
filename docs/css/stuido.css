@@ -269,7 +269,7 @@ h2 {
   z-index: 1; }
 
 .games-section--the-take::after {
-  background-image: url("../img/the-take-bg.png");
+  background-image: url("../img/the-take-bg.jpg");
   background-size: cover;
   background-position: center center;
   opacity: 0.3;
@@ -415,9 +415,9 @@ footer {
   .profile-pic--jose {
     background-image: url("../img/jose.jpg"); }
   .profile-pic--rob {
-    background-image: url("../img/rob.png"); }
+    background-image: url("../img/rob.jpg"); }
   .profile-pic--john {
-    background-image: url("../img/john.png"); }
+    background-image: url("../img/john.jpg"); }
 
 .bio-wrapper {
   color: #ffffff;
