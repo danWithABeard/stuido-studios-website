@@ -80,12 +80,13 @@ table {
 
 header {
   background-color: #151415;
-  width: 100%;
+  border-top: 11px solid #f46708;
   height: 100vh;
-  position: relative;
   margin-top: -200px;
+  position: relative;
   transition: all .5s ease-in-out;
-  border-top: 11px solid #f46708; }
+  width: 100%;
+  z-index: 4; }
   header::before {
     background-image: url("../img/vr.jpg");
     background-size: cover;
@@ -229,7 +230,8 @@ h2 {
   font-size: 16px;
   height: 100vh;
   position: relative;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  overflow: hidden; }
   .games-section--left {
     align-items: flex-start; }
   .games-section--right {
@@ -237,7 +239,7 @@ h2 {
   .games-section__copy-wrapper {
     padding: 100px 50px;
     width: 100%;
-    z-index: 2; }
+    z-index: 3; }
     @media screen and (min-width: 500px) {
       .games-section__copy-wrapper {
         width: 66%; } }
@@ -249,10 +251,12 @@ h2 {
         width: 33%; } }
   .games-section h3 {
     font-size: 40px;
-    margin: 10px 0; }
+    margin: 10px 0;
+    text-shadow: 1px 1px 0 #151415, 2px 2px 0 #151415; }
   .games-section p {
     font-size: 22px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 0 #151415, 2px 2px 0 #151415; }
 
 .games-section--dont-look-away::after {
   background-image: url("../img/dont-look-away.jpg");
@@ -267,6 +271,7 @@ h2 {
 .games-section--the-take::after {
   background-image: url("../img/the-take-bg.png");
   background-size: cover;
+  background-position: center center;
   opacity: 0.3;
   content: '';
   position: absolute;
@@ -283,6 +288,35 @@ h2 {
   height: 100%;
   width: 100%;
   z-index: 1; }
+
+.the-take__video-overlay {
+  background-image: url("../img/overlay-pattern.png");
+  bottom: 0;
+  display: none;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+  @media only screen and (min-width: 700px) {
+    .the-take__video-overlay {
+      display: block; } }
+
+.the-take__video {
+  display: none;
+  height: auto;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  z-index: 1; }
+  @media only screen and (min-width: 700px) {
+    .the-take__video {
+      display: block; } }
 
 footer {
   background-color: #f46708;
