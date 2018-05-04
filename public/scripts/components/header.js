@@ -48,7 +48,7 @@ export default class Header extends Component <{}> {
         </div>
         <header>
           <div className={stickyClasses}>
-            <div className="sticky-nav__webiste-links">
+            <div className="sticky-nav__website-links">
               <div>
                 <a href="#top" className="website-links__logo">Stuido</a>
                 <a href="#games" className="website-links">Games</a>

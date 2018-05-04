@@ -57,6 +57,9 @@ table {
     -moz-box-shadow: -5px -5px 0 0 #bc6124;
     box-shadow: -5px -5px 0 0 #bc6124; }
 
+em {
+  font-style: italic; }
+
 @font-face {
   font-family: 'featured-item';
   src: url("../fonts/featureditem-webfont.woff2") format("woff2"), url("../fonts/featureditem-webfont.woff") format("woff");
@@ -131,7 +134,7 @@ a {
   .sticky-nav--visible {
     opacity: 1;
     margin-top: 0; }
-  .sticky-nav__webiste-links {
+  .sticky-nav__website-links {
     align-items: center;
     background-color: #f46708;
     border-bottom: 1px solid #bc6124;
@@ -220,6 +223,9 @@ h2 {
   font-family: 'featured-item';
   font-size: 60px;
   letter-spacing: 1px; }
+
+.eula-header {
+  border-top: 11px solid #f46708; }
 
 .games-section {
   background-color: #151415;
@@ -512,5 +518,46 @@ footer {
   .job-title--john:hover::after {
     content: 'coffee sommelier';
     font-size: 20px; }
+
+.eula-section {
+  background-color: #151415;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'neutra-text', sans-serif;
+  padding: 100px 0; }
+  .eula-section h2 {
+    text-align: center; }
+  .eula-section h3 {
+    text-align: center; }
+  .eula-section h4 {
+    color: #f46708;
+    margin-top: 20px; }
+
+.eula__copy {
+  margin: 50px auto 30px;
+  max-width: 900px;
+  text-align: left;
+  width: 100%; }
+  .eula__copy ol {
+    counter-reset: list;
+    list-style-type: lower-alpha;
+    padding: 20px 40px; }
+    .eula__copy ol > li {
+      list-style: none;
+      position: relative; }
+      .eula__copy ol > li:before {
+        counter-increment: list;
+        content: " ( " counter(list, lower-alpha) " ) ";
+        position: absolute;
+        left: -2em; }
+  .eula__copy li {
+    margin-top: 10px; }
+  .eula__copy p {
+    margin-top: 10px;
+    line-height: 1.2; }
+  .eula__copy a {
+    text-decoration: underline; }
+    .eula__copy a:hover {
+      color: #f46708; }
 
 /*# sourceMappingURL=stuido.css.map */

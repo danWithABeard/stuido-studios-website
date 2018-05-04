@@ -67,7 +67,7 @@ a {
     margin-top: 0;
   }
 
-  &__webiste-links {
+  &__website-links {
     align-items: center;
     background-color: $orange;
     border-bottom: 1px solid $burnt-orange;
@@ -186,4 +186,8 @@ h2 {
   font-family: 'featured-item';
   font-size: 60px;
   letter-spacing: 1px;
+}
+
+.eula-header {
+  border-top: 11px solid $orange;
 }

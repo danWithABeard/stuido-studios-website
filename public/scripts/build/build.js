@@ -21303,7 +21303,7 @@ var Header = (function (_Component) {
             { className: stickyClasses },
             _react2['default'].createElement(
               'div',
-              { className: 'sticky-nav__webiste-links' },
+              { className: 'sticky-nav__website-links' },
               _react2['default'].createElement(
                 'div',
                 null,
